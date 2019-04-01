@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
             new Container(
               color: Colors.black54,
             ),
+            
             new Align(
               alignment: Alignment(0.0,-0.4),
               child: Container(
@@ -51,6 +52,7 @@ class MyApp extends StatelessWidget {
                 width: 350.0,
               ),
             ),
+            
             new Align(
               alignment: Alignment(0.0, -0.8),
 
@@ -84,26 +86,26 @@ class MyApp extends StatelessWidget {
           ],
           ),
           
-      bottomNavigationBar: new Theme(
-        data: Theme.of(context).copyWith(
-          canvasColor: const Color.fromRGBO(49, 60, 73, 1)
-        ),
-        child: new BottomNavigationBar(     
+       bottomNavigationBar: new Theme(
+         data: Theme.of(context).copyWith(
+           canvasColor: const Color.fromRGBO(49, 60, 73, 1)
+         ),
+         child: new BottomNavigationBar(     
         items: [
-          BottomNavigationBarItem(
+           BottomNavigationBarItem(
+             
+             icon: Icon(Icons.home, color: Colors.white),
+             title: new Text("Home",style: TextStyle(color: Colors.white))
+           ),
+           BottomNavigationBarItem(
             
-            icon: Icon(Icons.home, color: Colors.white),
-            title: new Text("Home",style: TextStyle(color: Colors.white))
-          ),
-          BottomNavigationBarItem(
-            
-            icon: Icon(Icons.directions_transit, color: Colors.white),
-            title: Text('Transporte Colectivo',style: TextStyle(color: Colors.white))
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.local_taxi, color: Colors.white),
-            title: Text('RadioTaxi',style: TextStyle(color: Colors.white))
-          ),
+             icon: Icon(Icons.directions_transit, color: Colors.white),
+             title: Text('Transporte Colectivo',style: TextStyle(color: Colors.white))
+           ),
+           BottomNavigationBarItem(
+             icon: Icon(Icons.local_taxi, color: Colors.white),
+             title: Text('RadioTaxi',style: TextStyle(color: Colors.white))
+           ),
         ],
         fixedColor: Colors.yellowAccent,
         
