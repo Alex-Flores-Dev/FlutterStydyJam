@@ -8,8 +8,11 @@ void main() {
 class SecondPage extends StatelessWidget {
  @override
  Widget build(BuildContext context) {
-  return new MaterialApp(
-  
+  return new Scaffold(
+  appBar: AppBar(
+        backgroundColor: Color.fromRGBO(49, 60, 72, 1),
+        title: new Text("OnTimeApp"),
+      ),
  );
  }
 }
