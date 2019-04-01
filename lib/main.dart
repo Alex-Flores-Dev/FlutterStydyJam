@@ -14,16 +14,16 @@ class MyApp extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color.fromRGBO(49, 60, 72, 1),
-        title: new Text("OnTimeApp"),
+       appBar: AppBar(
+         backgroundColor: Color.fromRGBO(49, 60, 72, 1),
+         title: new Text("OnTimeApp"),
       ),
      body: new Stack(
-          children: <Widget>[
-            new Container(
-              decoration: new BoxDecoration(
-                image: new DecorationImage(
-                  image: new AssetImage("assets/images/people2.jpg"),
+           children: <Widget>[
+             new Container(
+               decoration: new BoxDecoration(
+                 image: new DecorationImage(
+                   image: new AssetImage("assets/images/people2.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
