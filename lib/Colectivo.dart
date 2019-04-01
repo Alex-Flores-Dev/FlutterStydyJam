@@ -11,7 +11,7 @@ class SecondPage extends StatelessWidget {
   return new Scaffold(
   appBar: AppBar(
         backgroundColor: Color.fromRGBO(49, 60, 72, 1),
-        title: new Text("A donde vamos..."),
+        title: new Text("Trasnporte colectivo."),
       ),
  );
  }
