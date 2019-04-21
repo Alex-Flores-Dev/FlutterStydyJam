@@ -26,3 +26,18 @@ class MyApp extends StatelessWidget {
   _DashboardScreenState createState() => new _DashboardScreenState();
 }
 
+class _DashboardScreenState extends State<DashboardScreen> {
+  PageController _pageController;
+  int _page = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _pageController = new PageController();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _pageController.dispose();
+  }
