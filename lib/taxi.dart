@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Location extends StatelessWidget {
+class Taxi extends StatelessWidget {
 
-  Location(this.listType);
+  Taxi(this.listType);
   final String listType;
 
   @override

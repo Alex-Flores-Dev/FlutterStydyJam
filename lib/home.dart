@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Colectivo extends StatelessWidget {
+class Home extends StatelessWidget {
 
-  Colectivo(this.listType);
+  Home(this.listType);
   final String listType;
 
   @override

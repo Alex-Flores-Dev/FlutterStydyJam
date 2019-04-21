@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterstudy/colectivo.dart';
-import 'package:flutterstudy/radio_taxi.dart';
+import 'package:flutterstudy/taxi.dart';
+import 'package:flutterstudy/home.dart';
 
 void main() => runApp(new MyApp());
 
@@ -67,8 +68,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
       body: new PageView(
         children: [
           new Home("Home screen"),
-          new Location("Location screen"),
-          new Friends("Friends screen"),
+          new Taxi("Location screen"),
+          new Colectivo("Friends screen"),
         ],
         onPageChanged: onPageChanged,
         controller: _pageController,
