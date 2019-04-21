@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(new MaterialApp(
-    home: MyApp(),
-  ));
-}
-
+void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   @override
-  int _selected=0;
-  final _statefin=[Text('item 1'),Text('item 2'),Text('item 2')];
-
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      title: 'Flutter Bottom Navigation',
+      debugShowCheckedModeBanner: false,
+      theme: new ThemeData(
+        primaryColor: const Color(0xFF02BB9F),
+        primaryColorDark: const Color(0xFF167F67),
+        accentColor: const Color(0xFFFFAD32),
+      ),
+    );
+  }
+}
   Widget build(BuildContext context) {
     return new Scaffold(
        appBar: AppBar(
