@@ -1,18 +1,25 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(new MaterialApp(
-   home: SecondPage(),
-  ));
-}
-class SecondPage extends StatelessWidget {
- @override
- Widget build(BuildContext context) {
-  return new Scaffold(
-   appBar: AppBar(
-         backgroundColor: Color.fromRGBO(49, 60, 72, 1),
-        title: new Text("Trasnporte colectivo."),
+class Location extends StatelessWidget {
+
+  Location(this.listType);
+  final String listType;
+
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      body: new Center(
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new Text(
+              listType,
+              style: Theme.of(context).textTheme.display1,
+            ),
+          ],
+        ),
       ),
- );
- }
+    );
+  }
 }
