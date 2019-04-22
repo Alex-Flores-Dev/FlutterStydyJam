@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Bottom Navigation',
       debugShowCheckedModeBanner: false,
       theme: new ThemeData(
-        primaryColor: const Color(0xFF02BB9F),
+        primaryColor: const Color.fromRGBO(49, 60, 72, 1),
         primaryColorDark: const Color(0xFF167F67),
-        accentColor: const Color(0xFFFFAD32),
+        accentColor: const Color.fromRGBO(49, 60, 72, 1),
       ),
-      home: new DashboardScreen(title: 'Bottom Navigation'),
+      home: new DashboardScreen(title: 'OnTimeApp'),
     );
   }
 }
@@ -67,9 +67,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
       ),
       body: new PageView(
         children: [
-          new Home("Home screen"),
+          new Home("Homeeeeeeeee"),
           new Taxi("Location screen"),
-          new Colectivo("Friends screen"),
+          new Colectivo(),
         ],
         onPageChanged: onPageChanged,
         controller: _pageController,
@@ -77,7 +77,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       bottomNavigationBar: new Theme(
         data: Theme.of(context).copyWith(
               // sets the background color of the `BottomNavigationBar`
-              canvasColor: const Color(0xFF167F67),
+              canvasColor: const Color.fromRGBO(49, 60, 72, 1),
             ), // sets the inactive color of the `BottomNavigationBar`
         child: new BottomNavigationBar(
           items: [
